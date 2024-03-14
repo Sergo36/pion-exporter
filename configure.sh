@@ -13,7 +13,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=$WORKINGDIRECTORY/json_exporter.py
+ExecStart=$WORKINGDIRECTORY/json_exporter.py 1012 http://localhost:8012/status
 WorkingDirectory=$WORKINGDIRECTORY
 SyslogIdentifier=$SERVICENAME
 Restart=always
